@@ -1,5 +1,8 @@
 package com.bartek.example.instagramviewer.controller;
 
+import com.bartek.example.instagramviewer.UserMedia;
+
+import retrofit.Callback;
 import retrofit.http.GET;
 import retrofit.http.Path;
 import retrofit.http.Query;

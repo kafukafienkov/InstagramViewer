@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bartek.example.instagramviewer.controller.UserData;
+
 /**
  * Created by Bartek on 2014-11-28.
  */
@@ -17,6 +19,12 @@ public class UserFragment extends Fragment {
     private TextView userName;
 
     private ImageView photoImage;
+
+    private UserData userData;
+
+    public void setUserData(UserData userData) {
+        this.userData = userData;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
