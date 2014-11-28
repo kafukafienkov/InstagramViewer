@@ -1,6 +1,6 @@
 package com.bartek.example.instagramviewer.controller;
 
-import com.bartek.example.instagramviewer.UserMedia;
+import com.bartek.example.instagramviewer.model.UserMedia;
 
 import retrofit.Callback;
 import retrofit.http.GET;

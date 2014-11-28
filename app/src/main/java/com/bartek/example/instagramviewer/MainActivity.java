@@ -2,12 +2,13 @@ package com.bartek.example.instagramviewer;
 
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.bartek.example.instagramviewer.controller.InstagramAdapter;
 import com.bartek.example.instagramviewer.controller.InstagramApiService;
+import com.bartek.example.instagramviewer.model.UserMedia;
 
 import retrofit.Callback;
 import retrofit.RestAdapter;
@@ -42,7 +43,7 @@ public class MainActivity extends FragmentActivity {
                 .build();
 
         InstagramApiService service = restAdapter.create(InstagramApiService.class);
-        service.getUserPhotos(1755886, "ca0dff7571cd4fa3b70a025105cc2b60", new Callback<UserMedia>() {
+        service.getUserPhotos(17457885, "ca0dff7571cd4fa3b70a025105cc2b60", new Callback<UserMedia>() {
             @Override
             public void success(UserMedia userMedia, Response response) {
                 presentUserData(userMedia);

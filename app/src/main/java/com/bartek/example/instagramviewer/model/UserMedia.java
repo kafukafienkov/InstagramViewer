@@ -1,6 +1,6 @@
-package com.bartek.example.instagramviewer;
+package com.bartek.example.instagramviewer.model;
 
-import com.bartek.example.instagramviewer.controller.UserData;
+import com.bartek.example.instagramviewer.model.UserData;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
